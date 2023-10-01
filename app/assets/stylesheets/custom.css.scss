@@ -1,0 +1,54 @@
+@import 'semantic-ui';
+@import 'semantic-ui/collections/menu';
+
+h1.ui.inverted.header {
+  margin-top: clamp(1.5rem, 2.5rem, 3.5rem);
+}
+#nav_desktop {
+  display: none;
+}
+#footer_nav {
+  background-color: #454545;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  position: fixed;
+  bottom:0;
+  padding-right: 1.5rem;
+}
+#footer_nav_items {
+  display: flex;
+}
+
+.ui.stackable.grid {
+  width: auto;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
+
+h1.ui.header {
+  margin-bottom: 2rem;
+}
+
+.ui.stackable.three.column.grid h3{
+  margin-top: 1rem;
+}
+.ui.medium.bordered.image {
+  border: 8px solid springgreen;
+}
+@media only screen and (min-width: 767px) {
+  .ui.grid {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  #footer_nav {
+    display: none;
+  }
+  #nav_desktop {
+    display: flex;
+  }
+  .sub.header {
+    margin-top: -2rem;
+  }
+}

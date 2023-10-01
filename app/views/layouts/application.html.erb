@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnnacostalongaPortfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="pushable cz-move-body-down">
+    <div class="pusher">
+      <div class="ui inverted vertical masthead center aligned segment">
+        <%= render 'shared/nav' %>
+        <%= yield %>
+        <%= render 'shared/nav_footer' %>
+      </div>
+    </div>
+  </body>
+</html>

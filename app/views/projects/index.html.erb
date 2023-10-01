@@ -1,0 +1,13 @@
+<h1 class="ui header">My Projects</h1>
+
+<div class="ui container" id="projects">
+  <div class="ui stackable three column grid">
+    <% @projects.each do |category, projects| %>
+      <h3><%= category.to_s.capitalize %> Projects</h3>
+      <div class="row">
+
+          <%= render(ProjectComponent.with_collection(projects)) %>
+      </div>
+    <% end %>
+  </div>
+</div>
