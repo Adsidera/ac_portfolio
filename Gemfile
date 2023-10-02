@@ -72,3 +72,5 @@ group :test do
   gem 'rspec'
 end
 
+
+gem "spina", "~> 2.16"
